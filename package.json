@@ -1,0 +1,74 @@
+{
+  "name": "quimerapi",
+  "version": "1.0.0",
+  "description": "APPI para la plataforma web y movil",
+  "keywords": [
+    "loopback-application",
+    "loopback"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "lb-tsc",
+    "build:watch": "lb-tsc --watch",
+    "lint": "npm run prettier:check && npm run eslint",
+    "lint:fix": "npm run eslint:fix && npm run prettier:fix",
+    "prettier:cli": "lb-prettier \"**/*.ts\" \"**/*.js\"",
+    "prettier:check": "npm run prettier:cli -- -l",
+    "prettier:fix": "npm run prettier:cli -- --write",
+    "eslint": "lb-eslint --report-unused-disable-directives .",
+    "eslint:fix": "npm run eslint -- --fix",
+    "pretest": "npm run clean && npm run build",
+    "test": "lb-mocha --allow-console-logs \"dist/__tests__\"",
+    "posttest": "npm run lint",
+    "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js && npm run posttest",
+    "docker:build": "docker build -t quimerapi .",
+    "docker:run": "docker run -p 3000:3000 -d quimerapi",
+    "migrate": "node ./dist/migrate",
+    "openapi-spec": "node ./dist/openapi-spec",
+    "prestart": "npm run build",
+    "start": "node -r source-map-support/register .",
+    "clean": "lb-clean dist *.tsbuildinfo .eslintcache"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "",
+  "license": "",
+  "files": [
+    "README.md",
+    "dist",
+    "src",
+    "!*/__tests__"
+  ],
+  "dependencies": {
+    "@loopback/authentication": "^4.2.10",
+    "@loopback/authentication-jwt": "^0.4.4",
+    "@loopback/boot": "^2.4.0",
+    "@loopback/core": "^2.9.2",
+    "@loopback/http-caching-proxy": "^2.1.10",
+    "@loopback/openapi-v3": "^3.4.6",
+    "@loopback/repository": "^2.10.0",
+    "@loopback/rest": "^5.2.1",
+    "@loopback/rest-explorer": "^2.2.7",
+    "@loopback/service-proxy": "^2.3.5",
+    "@types/lodash": "^4.14.158",
+    "@types/morgan": "^1.9.1",
+    "loopback-connector-mysql": "^5.4.3",
+    "loopback-connector-rest": "^3.7.0",
+    "morgan": "^1.10.0",
+    "tslib": "^2.0.0"
+  },
+  "devDependencies": {
+    "@loopback/build": "^6.1.1",
+    "source-map-support": "^0.5.19",
+    "@loopback/testlab": "^3.2.1",
+    "@types/node": "^10.17.27",
+    "@loopback/eslint-config": "^8.0.4",
+    "eslint": "^7.5.0",
+    "typescript": "~3.9.7"
+  }
+}
