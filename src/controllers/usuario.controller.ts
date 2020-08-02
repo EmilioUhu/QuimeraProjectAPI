@@ -18,9 +18,9 @@ import {
 } from '@loopback/rest';
 import {usuario} from '../models';
 import {UsuarioRepository} from '../repositories';
-// ---------- ADD IMPORTS -------------
-import {authenticate} from '@loopback/authentication';
-@authenticate('jwt') // <---- Apply the @authenticate decorator at the class level
+// // ---------- ADD IMPORTS -------------
+// import {authenticate} from '@loopback/authentication';
+// @authenticate('jwt') // <---- Apply the @authenticate decorator at the class level
 export class UsuarioController {
   constructor(
     @repository(UsuarioRepository)
