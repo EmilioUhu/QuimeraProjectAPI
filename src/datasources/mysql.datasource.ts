@@ -5,11 +5,11 @@ const config = {
   name: 'mysql',
   connector: 'mysql',
   url: '',
-  host: 'localhost',
-  port: 3306,
-  user: 'root',
-  password: 'postgres',
-  database: 'quimera'
+  host: 'us-cdbr-east-02.cleardb.com',
+  port: '',
+  user: 'b4ee9455b7979a',
+  password: 'e9449b51789f212',
+  database: 'heroku_fef1a41aac1570a',
 };
 
 // Observe application's life cycle to disconnect the datasource when
