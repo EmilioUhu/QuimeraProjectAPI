@@ -48,27 +48,28 @@
     "@loopback/authentication": "^4.2.10",
     "@loopback/authentication-jwt": "^0.4.4",
     "@loopback/boot": "^2.4.0",
+    "@loopback/build": "^6.1.1",
+    "@loopback/cli": "^2.11.0",
     "@loopback/core": "^2.9.2",
+    "@loopback/eslint-config": "^8.0.4",
     "@loopback/http-caching-proxy": "^2.1.10",
     "@loopback/openapi-v3": "^3.4.6",
     "@loopback/repository": "^2.10.0",
     "@loopback/rest": "^5.2.1",
     "@loopback/rest-explorer": "^2.2.7",
     "@loopback/service-proxy": "^2.3.5",
+    "@loopback/testlab": "^3.2.1",
     "@types/lodash": "^4.14.158",
     "@types/morgan": "^1.9.1",
     "loopback-connector-mysql": "^5.4.3",
     "loopback-connector-rest": "^3.7.0",
     "morgan": "^1.10.0",
-    "tslib": "^2.0.0"
+    "tslib": "^2.0.0",
+    "typescript": "~3.9.7"
   },
   "devDependencies": {
-    "@loopback/build": "^6.1.1",
     "source-map-support": "^0.5.19",
-    "@loopback/testlab": "^3.2.1",
     "@types/node": "^10.17.27",
-    "@loopback/eslint-config": "^8.0.4",
-    "eslint": "^7.5.0",
-    "typescript": "~3.9.7"
+    "eslint": "^7.5.0"
   }
 }
