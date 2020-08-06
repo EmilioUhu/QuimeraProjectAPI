@@ -8,3 +8,4 @@ export * from './tipousuario.controller';
 export * from './usuario.controller';
 export * from './instrumento.controller';
 export * from './user.controller';
+export * from './glucometro.controller';

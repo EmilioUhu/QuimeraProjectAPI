@@ -6,3 +6,4 @@ export * from './tipoinstrumento.repository';
 export * from './tipousuario.repository';
 export * from './usuario.repository';
 export * from './instrumento.repository';
+export * from './glucometro.repository';

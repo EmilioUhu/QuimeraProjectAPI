@@ -6,3 +6,4 @@ export * from './tipoinstrumento.model';
 export * from './tipousuario.model';
 export * from './usuario.model';
 export * from './instrumento.model';
+export * from './glucometro.model';
