@@ -5,12 +5,19 @@ const config = {
   name: 'mysql',
   connector: 'mysql',
   url: '',
-  host: 'us-cdbr-east-02.cleardb.com',
+  host: 'quimeraprojectserver.mysql.database.azure.com',
   port: '',
-  user: 'b4ee9455b7979a',
-  password: 'e9449b51789f212',
-  database: 'heroku_fef1a41aac1570a',
+  user: 'emilio@quimeraprojectserver',
+  password: 'Quimeraproject!',
+  database: 'quimera',
 };
+//  SSL: 'ca:fs.readFileSync(ECDHE-RSA-AES256-GCM-SHA384)',
+
+// host: 'us-cdbr-east-02.cleardb.com',
+// port: '',
+// user: 'b4ee9455b7979a',
+// password: 'e9449b51789f212',
+// database: 'heroku_fef1a41aac1570a',
 
 // Observe application's life cycle to disconnect the datasource when
 // application is stopped. This allows the application to be shut down
