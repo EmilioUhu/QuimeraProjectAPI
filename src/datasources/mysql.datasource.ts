@@ -11,6 +11,7 @@ const config = {
   password: 'Quimeraproject!',
   database: 'quimera',
 };
+//ssl: 'C:/BaltimoreCyberTrustRoot.crt.pem',
 //  SSL: 'ca:fs.readFileSync(ECDHE-RSA-AES256-GCM-SHA384)',
 
 // host: 'us-cdbr-east-02.cleardb.com',
